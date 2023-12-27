@@ -1,0 +1,274 @@
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+.html{
+    box-sizing: border-box;
+}
+  
+*,*::before*,*::after{
+    box-sizing: inherit;
+}
+  .item{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(8, 173, 49);
+    padding: 20px;
+    
+  }
+  .wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+    
+  }
+  .header {
+    /* background-color: #000; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+
+  }
+  /* .header_list */
+  .header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+  }
+  body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    color: #102746;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  @media only screen and (max-width: 1024px){
+    body{
+        text-align: center ;
+        display: block;
+    }
+  }
+ 
+  .header_link{
+    font-size: 18px;
+    line-height: 24px;
+    color: rgb(249, 245, 241);
+    text-decoration: none;
+  }
+  .header_list{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .header_item{
+    margin-right: 82px;
+
+    
+  }
+  .header_item:last-child{
+    margin-right: 0px;
+  }
+  /* .header_list */
+  .intro{
+    height: 100vh;
+    background: url(../img/svg/intro-bk.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+    
+  }
+  .intro_title{
+    color: white;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;    
+    line-height: normal;
+    max-width: 619px;
+    margin-bottom:22px;
+
+  }
+ .header_link:hover,.header_link:focus,.header_link:active{
+  opacity: .75;
+ }
+ .header_link:first-child:hover{
+  color: black;
+ }
+ .header_link:nth-child(2):hover{
+  background-color: rgb(92, 37, 192);
+ }
+ .header_link:last-child:hover{
+  color: rgb(238, 255, 0);
+ }
+ .intro_subtitle{
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  max-width: 546px;
+  margin-bottom: 59px;
+
+ }
+ .search_form{
+  display: flex;
+  flex-wrap: wrap;
+ 
+ }
+ .search_form__field{
+  /* background-color: transparent; */
+  background: transparent url(../img/svg/circl_icon.svg) no-repeat left 4px;  
+  border: 0px;
+  border-bottom: 3px solid #BFC0C5;
+  margin-right: 60px;   
+  padding-left: 43px;  
+  padding-bottom: 24px;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: 500;
+  line-height: 24px;
+  width: 297px;
+ }
+ .search_form__submit:hover,.search_form__submit:active,.search_form__submit:focus{
+  background:#306ab7;
+ }
+ .search_form__submit{
+  text-transform: uppercase;
+  background: #1B7DFF;
+  /* color: white;
+  width: 171px; */
+  height: 58px;
+  /* font-size: 24px; */
+  border: none;
+  padding: 15px 39px;
+ }
+ 
+ .search_form__field::placeholder{
+  color: #FFF;
+  font-size: 18px; 
+  font-weight: 500;
+
+ }
+ .benefits__wrap{ 
+  max-width: 1262px;
+  height: 655px; 
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px 0px rgb(211, 207, 218);
+  background-color: #FFF;
+  position: relative;
+ }
+
+ .benefits__title{
+  transform: translateY(-100%);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* letter-spacing: 0px; отступ между буквами текста*/
+  color: #102746;
+  padding: 90px 100px 93px 100px;
+  text-align: left; 
+  top: 0;
+  left: 0;
+  position: absolute; 
+  background-color: #FFF;
+  width: 84%
+  
+ }
+ .benefits_cards{
+  height:30vh;
+  /* display: flex;  */
+  display: grid;
+  grid-template-columns:30% 30% 30%;
+ 
+
+ }
+ .benefit_card{
+  display: grid;
+  
+  /* display: flex; 
+  flex-wrap: wrap;   */
+  width: 317px;
+  height: 288px;
+  top: 994px;
+  left: 189px;
+  margin: 100px 55px 111px 85px;
+ }
+
+ /*надпись*/
+ .benefits__card-title{
+  width: 224px;
+  color: #000; 
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+ }
+ .benefits__card-desc{ 
+  max-width: 317px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+ 
+ }
+
+ .benefits__card-more{
+  text-transform: uppercase; 
+  text-decoration: none; 
+ }
+ .benefits__card-pic{
+  max-width: 66px;
+  margin-bottom: 37px;
+ }
+ .benefits__card-thumb{
+  display: block;
+ }
+ .inspired{
+  width: 1264px;
+  height: 735px;
+  top: 1525px;
+  left: 88px;
+  background-color: #FFF;
+  
+ }
+
+ .inspireds__trips{
+ /* display: grid;
+ grid-template-columns: 50% 50% ;
+ grid-template-rows: 30% 30% 30%; */
+ }
+ .inspired__title{
+  
+ }
+ .inspireds_blocks{
+display: grid;
+grid-template-columns: 50% 50%;
+ }
+ .inspireds_blockss{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+ }
