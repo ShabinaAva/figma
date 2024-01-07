@@ -42,18 +42,24 @@
     margin: 0 auto;
     
   }
-  .header_active{
-    background-color: #0E1D28;
-  }
+  
   .header {
     /* background-color: #000; */
     position: absolute;
     top: 0;
     width: 100%;
     left: 0;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
 
   }
+
+  .header_active{
+    background-color: #0E1D28;
   /* .header_list */
+  }
+
   .header_wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +67,7 @@
     justify-content: space-between;
     padding-top: 56px;
   }
+
   body{
     font-family: 'Lato';
     font-style: normal;
