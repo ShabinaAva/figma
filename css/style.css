@@ -42,6 +42,9 @@
     margin: 0 auto;
     
   }
+  .header_active{
+    background-color: #0E1D28;
+  }
   .header {
     /* background-color: #000; */
     position: absolute;
@@ -256,14 +259,7 @@
   
  }
 
- .inspireds__trips{
- /* display: grid;
- grid-template-columns: 50% 50% ;
- grid-template-rows: 30% 30% 30%; */
- }
- .inspired__title{
-  
- }
+
  .inspireds_blocks{
 display: grid;
 grid-template-columns: 50% 50%;
